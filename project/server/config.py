@@ -2,13 +2,13 @@
 
 import os
 basedir = os.path.abspath(os.path.dirname(__file__))
-postgres_local_base = 'postgresql://postgres:@localhost/'
-database_name = 'something'
+postgres_local_base = 'postgresql://postgres:maivandiep@localhost/'
+database_name = 'flask_jwt_auth'
 
 
 class BaseConfig:
     """Base configuration."""
-    SECRET_KEY = 'my_precious'
+    SECRET_KEY = 'this_is_secret_key'
     DEBUG = False
     BCRYPT_LOG_ROUNDS = 13
     SQLALCHEMY_TRACK_MODIFICATIONS = False
